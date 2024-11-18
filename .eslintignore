@@ -1,0 +1,10 @@
+config/
+dist/
+docs/
+node_modules/
+tests/
+.eslintrc
+jest.config.js
+webpack.config.js
+postcss.config.js
+cypress.config.js
