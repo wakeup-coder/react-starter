@@ -14,9 +14,9 @@ export function useImmer<T>(initialState: T) {
 
   return [
     value,
-    useCallback((updater: Updater<T>) => {
+    useCallback((updater: T | DraftFunction<T>) => {
       if (typeof updater === 'function') {
-        setValue(produce(updater));
+        setValue(produce(updater as DraftFunction<T>));
         return;
       }
       setValue(freeze(updater));
