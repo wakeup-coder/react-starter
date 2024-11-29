@@ -150,6 +150,9 @@ importers:
       progress-bar-webpack-plugin:
         specifier: ^2.1.0
         version: 2.1.0(webpack@5.96.1)
+      react-refresh:
+        specifier: ^0.14.2
+        version: 0.14.2
       swc-loader:
         specifier: ^0.2.6
         version: 0.2.6(@swc/core@1.9.2)(webpack@5.96.1)
